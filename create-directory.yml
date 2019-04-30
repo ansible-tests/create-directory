@@ -1,9 +1,7 @@
----
 - name : create directory in node servers
   hosts : all
   vars :
           dir_path : /home/ubuntu/sample-dir
-  become : true
   tasks :
           - name : create directory
             file :
