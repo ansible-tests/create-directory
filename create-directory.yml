@@ -1,10 +1,6 @@
-- name : create directory in node servers
-  tasks :
-          - name : create directory
-            file :
-                    path : "/home/shyam/sample-dir"
-                    state : directory
-                    mode : 0775
-                    owner : shyam
-                    group : shyam
-                    recurse : yes
+- name: Hello World Sample
+  hosts: all
+  tasks:
+    - name: Hello Message
+      debug:
+        msg: "Hello World!"
