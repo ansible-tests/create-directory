@@ -1,6 +1,10 @@
-- name: Hello World Sample
-  hosts: all
+- name: Create Directory
   tasks:
-    - name: Hello Message
-      debug:
-        msg: "Hello World!"
+          - name: Create directory
+            file:
+                    path: "/home/ubuntu/sample-dir/"
+                    state: directory
+                    mode: 0775
+                    owner: ubuntu
+                    group: ubuntu
+                    recurse: yes
