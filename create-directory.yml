@@ -1,10 +1,10 @@
 - name: Create Directory
   tasks:
-          - name: Create directory
-            file:
-                    path: "/home/ubuntu/sample-dir/"
-                    state: directory
-                    mode: 0775
-                    owner: ubuntu
-                    group: ubuntu
-                    recurse: yes
+    - name: Create directory
+      file:
+        path: "/home/ubuntu/sample-dir/"
+        state: directory
+        mode: 0775
+        owner: ubuntu
+        group: ubuntu
+        recurse: yes
